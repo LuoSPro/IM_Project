@@ -49,7 +49,7 @@ public class ChatServerThread implements Runnable{
 	 */
 	public void run() {
 		while(isLive){
-			try {
+			try {//对异常进行捕获，使服务器的健壮性增强
 				//解析消息
 				ChatResult result;
 				result = ChatProtocol.getResult(dis);

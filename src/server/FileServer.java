@@ -18,7 +18,11 @@ public class FileServer {
     private ServerSocket serverSocket;   //普通消息传输服务器套接字
     private ServerSocket fileServerSocket;  // 文件传输服务器套接字
 
-    private String path ="C:\\Users\\Administrator\\Desktop\\jar\\file";//文件存储路径
+    //服务端的文件存储路径(此为云服务器上的地址)
+    private String path ="C:\\Users\\Administrator\\Desktop\\jar\\file";
+    //也可以将共享文件存到这个项目的路径下
+//    private String path ="file";
+
 
     public FileServer() {
         try {
